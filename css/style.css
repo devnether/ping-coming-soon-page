@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
 html {
   font-family: "Libre Franklin";
 }
@@ -51,6 +52,9 @@ input {
   border-radius: 30px;
   border-color: hsl(223, 100%, 88%);
 }
+#email:valid {
+  border-color: green;
+}
 
 #submit {
   color: white;
@@ -78,9 +82,10 @@ h1 span {
   font-weight: 700;
 }
 
-a{
-
+a {
+  text-decoration: none;
 }
+
 .social {
   margin-top: 30px;
   display: flex;
@@ -102,4 +107,30 @@ a{
   cursor: pointer;
   background-color: hsl(223, 87%, 63%);
   color: white;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  .subscription {
+    flex-direction: column;
+  }
+  #email {
+    width: 88%;
+    margin-bottom: 10px;
+  }
+
+  #submit {
+    width: 100%;
+  }
 }
