@@ -30,8 +30,9 @@ body {
   width: 100%;
   padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   margin-top: -30px;
 }
 
@@ -52,8 +53,22 @@ input {
   border-radius: 30px;
   border-color: hsl(223, 100%, 88%);
 }
+
 #email:valid {
   border-color: green;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+}
+
+.error {
+  visibility: visible;
+  margin: 0;
+  color: red;
+  font-size: 10px;
+  margin-left: 40px;
 }
 
 #submit {
